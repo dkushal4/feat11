@@ -1,0 +1,22 @@
+pipeline:
+  name: feat11
+  identifier: feat11
+  projectIdentifier: demo
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: fds
+        identifier: fds
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: <+input>
+        tags: {}
